@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PVP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="{{ url_for('static', filename='fix.css') }}" rel="stylesheet" type="text/css" >
+</head>
+<body >
+    <nav>
+      <ul id='mm'>
+        <li class="active"><a  href="http://127.0.0.1:5000/home">Home</a></li>
+        <li><a data-toggle="tab"  href="http://127.0.0.1:5000/signup">Sign up</a></li>
+        <li></li><a data-toggle="tab" href="http://127.0.0.1:5000/signin">Sign in</a></li>
+        <li><a data-toggle="tab"  href="http://127.0.0.1:5000/about">About</a></li>
+      </ul>
+  
+    </nav>
+ 
+
+
+    <main role="main" class="container">
+      {% block content %}
+        
+      {% endblock %}
+    </main>
+
+</body>
+</html>
